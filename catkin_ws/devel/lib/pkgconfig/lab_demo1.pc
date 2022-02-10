@@ -1,0 +1,8 @@
+prefix=/home/sskulka/catkin_ws/devel
+
+Name: lab_demo1
+Description: Description of lab_demo1
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

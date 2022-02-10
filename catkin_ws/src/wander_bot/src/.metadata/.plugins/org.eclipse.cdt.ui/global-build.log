@@ -1,0 +1,215 @@
+10:30:03 **** Incremental Build of configuration Debug for project wander_bot_cpp ****
+make all 
+Building target: wander_bot_cpp
+Invoking: Cross G++ Linker
+g++ -L/opt/ros/noetic/lib -o "wander_bot_cpp"  ./Stopper.o ./run_stopper.o   -l/opt/ros/noetic/lib/
+/bin/ld: cannot find -l/opt/ros/noetic/lib/
+collect2: error: ld returned 1 exit status
+make: *** [makefile:60: wander_bot_cpp] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:32:15 **** Incremental Build of configuration Debug for project wander_bot_cpp ****
+make all 
+Building target: wander_bot_cpp
+Invoking: Cross G++ Linker
+g++ -L/opt/ros/noetic/lib -o "wander_bot_cpp"  ./Stopper.o ./run_stopper.o   
+/bin/ld: ./Stopper.o: in function `Stopper::Stopper()':
+/home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:10: undefined reference to `ros::NodeHandle::NodeHandle(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:14: undefined reference to `ros::Publisher::~Publisher()'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:16: undefined reference to `ros::Subscriber::~Subscriber()'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:10: undefined reference to `ros::Subscriber::~Subscriber()'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:10: undefined reference to `ros::Publisher::~Publisher()'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:10: undefined reference to `ros::NodeHandle::~NodeHandle()'
+/bin/ld: ./Stopper.o: in function `Stopper::scanCallback(boost::shared_ptr<sensor_msgs::LaserScan_<std::allocator<void> > const> const&)':
+/home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:38: undefined reference to `ros::console::g_initialized'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:38: undefined reference to `ros::console::initialize()'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:38: undefined reference to `ros::console::initializeLogLocation(ros::console::LogLocation*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::console::levels::Level)'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:38: undefined reference to `ros::console::setLogLocationLevel(ros::console::LogLocation*, ros::console::levels::Level)'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:38: undefined reference to `ros::console::checkLogLocationEnabled(ros::console::LogLocation*)'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:38: undefined reference to `ros::console::print(ros::console::FilterBase*, void*, ros::console::levels::Level, char const*, int, char const*, char const*, ...)'
+/bin/ld: ./Stopper.o: in function `Stopper::startMoving()':
+/home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:45: undefined reference to `ros::Rate::Rate(double)'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:46: undefined reference to `ros::console::g_initialized'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:46: undefined reference to `ros::console::initialize()'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:46: undefined reference to `ros::console::initializeLogLocation(ros::console::LogLocation*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::console::levels::Level)'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:46: undefined reference to `ros::console::setLogLocationLevel(ros::console::LogLocation*, ros::console::levels::Level)'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:46: undefined reference to `ros::console::checkLogLocationEnabled(ros::console::LogLocation*)'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:46: undefined reference to `ros::console::print(ros::console::FilterBase*, void*, ros::console::levels::Level, char const*, int, char const*, char const*, ...)'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:48: undefined reference to `ros::ok()'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:50: undefined reference to `ros::spinOnce()'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:51: undefined reference to `ros::Rate::sleep()'
+/bin/ld: ./Stopper.o: in function `ros::Publisher ros::NodeHandle::advertise<geometry_msgs::Twist_<std::allocator<void> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, bool)':
+/opt/ros/noetic/include/ros/node_handle.h:254: undefined reference to `ros::NodeHandle::advertise(ros::AdvertiseOptions&)'
+/bin/ld: ./Stopper.o: in function `ros::Subscriber ros::NodeHandle::subscribe<sensor_msgs::LaserScan_<std::allocator<void> >, Stopper>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, void (Stopper::*)(boost::shared_ptr<sensor_msgs::LaserScan_<std::allocator<void> > const> const&), Stopper*, ros::TransportHints const&)':
+/opt/ros/noetic/include/ros/node_handle.h:472: undefined reference to `ros::NodeHandle::subscribe(ros::SubscribeOptions&)'
+/bin/ld: ./Stopper.o: in function `void ros::Publisher::publish<geometry_msgs::Twist_<std::allocator<void> > >(geometry_msgs::Twist_<std::allocator<void> > const&) const':
+/opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::g_initialized'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::initialize()'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::initializeLogLocation(ros::console::LogLocation*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::setLogLocationLevel(ros::console::LogLocation*, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::checkLogLocationEnabled(ros::console::LogLocation*)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::print(ros::console::FilterBase*, void*, ros::console::levels::Level, char const*, int, char const*, char const*, ...)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::g_initialized'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::initialize()'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::initializeLogLocation(ros::console::LogLocation*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::setLogLocationLevel(ros::console::LogLocation*, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::checkLogLocationEnabled(ros::console::LogLocation*)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::print(ros::console::FilterBase*, void*, ros::console::levels::Level, char const*, int, char const*, char const*, ...)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::g_initialized'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::initialize()'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::initializeLogLocation(ros::console::LogLocation*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::setLogLocationLevel(ros::console::LogLocation*, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::checkLogLocationEnabled(ros::console::LogLocation*)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::print(ros::console::FilterBase*, void*, ros::console::levels::Level, char const*, int, char const*, char const*, ...)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:111: undefined reference to `ros::Publisher::Impl::isValid() const'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::g_initialized'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::initialize()'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::initializeLogLocation(ros::console::LogLocation*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::setLogLocationLevel(ros::console::LogLocation*, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::checkLogLocationEnabled(ros::console::LogLocation*)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::print(ros::console::FilterBase*, void*, ros::console::levels::Level, char const*, int, char const*, char const*, ...)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::g_initialized'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::initialize()'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::initializeLogLocation(ros::console::LogLocation*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::setLogLocationLevel(ros::console::LogLocation*, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::checkLogLocationEnabled(ros::console::LogLocation*)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::print(ros::console::FilterBase*, void*, ros::console::levels::Level, char const*, int, char const*, char const*, ...)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::g_initialized'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::initialize()'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::initializeLogLocation(ros::console::LogLocation*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::setLogLocationLevel(ros::console::LogLocation*, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::checkLogLocationEnabled(ros::console::LogLocation*)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::print(ros::console::FilterBase*, void*, ros::console::levels::Level, char const*, int, char const*, char const*, ...)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:119: undefined reference to `ros::console::g_initialized'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:119: undefined reference to `ros::console::initialize()'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:119: undefined reference to `ros::console::initializeLogLocation(ros::console::LogLocation*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:119: undefined reference to `ros::console::setLogLocationLevel(ros::console::LogLocation*, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:119: undefined reference to `ros::console::checkLogLocationEnabled(ros::console::LogLocation*)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:119: undefined reference to `ros::console::print(ros::console::FilterBase*, void*, ros::console::levels::Level, char const*, int, char const*, char const*, ...)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:126: undefined reference to `ros::Publisher::publish(boost::function<ros::SerializedMessage ()> const&, ros::SerializedMessage&) const'
+/bin/ld: ./Stopper.o: in function `ros::serialization::Stream::advance(unsigned int)':
+/opt/ros/noetic/include/ros/serialization.h:681: undefined reference to `ros::serialization::throwStreamOverrun()'
+/bin/ld: /opt/ros/noetic/include/ros/serialization.h:681: undefined reference to `ros::serialization::throwStreamOverrun()'
+/bin/ld: ./Stopper.o: in function `ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::LaserScan_<std::allocator<void> > const> const&, void>::deserialize(ros::SubscriptionCallbackHelperDeserializeParams const&)':
+/opt/ros/noetic/include/ros/subscription_callback_helper.h:126: undefined reference to `ros::console::g_initialized'
+/bin/ld: /opt/ros/noetic/include/ros/subscription_callback_helper.h:126: undefined reference to `ros::console::initialize()'
+/bin/ld: /opt/ros/noetic/include/ros/subscription_callback_helper.h:126: undefined reference to `ros::console::initializeLogLocation(ros::console::LogLocation*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/subscription_callback_helper.h:126: undefined reference to `ros::console::setLogLocationLevel(ros::console::LogLocation*, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/subscription_callback_helper.h:126: undefined reference to `ros::console::checkLogLocationEnabled(ros::console::LogLocation*)'
+/bin/ld: /opt/ros/noetic/include/ros/subscription_callback_helper.h:126: undefined reference to `ros::console::print(ros::console::FilterBase*, void*, ros::console::levels::Level, char const*, int, char const*, char const*, ...)'
+/bin/ld: ./Stopper.o: in function `ros::serialization::Stream::advance(unsigned int)':
+/opt/ros/noetic/include/ros/serialization.h:681: undefined reference to `ros::serialization::throwStreamOverrun()'
+/bin/ld: /opt/ros/noetic/include/ros/serialization.h:681: undefined reference to `ros::serialization::throwStreamOverrun()'
+/bin/ld: /opt/ros/noetic/include/ros/serialization.h:681: undefined reference to `ros::serialization::throwStreamOverrun()'
+/bin/ld: /opt/ros/noetic/include/ros/serialization.h:681: undefined reference to `ros::serialization::throwStreamOverrun()'
+/bin/ld: ./run_stopper.o: in function `main':
+/home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../run_stopper.cpp:19: undefined reference to `ros::init(int&, char**, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int)'
+/bin/ld: ./run_stopper.o: in function `Stopper::~Stopper()':
+/home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.h:13: undefined reference to `ros::Subscriber::~Subscriber()'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.h:13: undefined reference to `ros::Publisher::~Publisher()'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.h:13: undefined reference to `ros::NodeHandle::~NodeHandle()'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:60: wander_bot_cpp] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:14:41 **** Incremental Build of configuration Debug for project wander_bot_cpp ****
+make all 
+Building target: wander_bot_cpp
+Invoking: Cross G++ Linker
+g++ -L/opt/ros/noetic/lib -o "wander_bot_cpp"  ./Stopper.o ./run_stopper.o   
+/bin/ld: ./Stopper.o: in function `Stopper::Stopper()':
+/home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:10: undefined reference to `ros::NodeHandle::NodeHandle(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:14: undefined reference to `ros::Publisher::~Publisher()'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:16: undefined reference to `ros::Subscriber::~Subscriber()'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:10: undefined reference to `ros::Subscriber::~Subscriber()'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:10: undefined reference to `ros::Publisher::~Publisher()'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:10: undefined reference to `ros::NodeHandle::~NodeHandle()'
+/bin/ld: ./Stopper.o: in function `Stopper::scanCallback(boost::shared_ptr<sensor_msgs::LaserScan_<std::allocator<void> > const> const&)':
+/home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:38: undefined reference to `ros::console::g_initialized'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:38: undefined reference to `ros::console::initialize()'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:38: undefined reference to `ros::console::initializeLogLocation(ros::console::LogLocation*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::console::levels::Level)'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:38: undefined reference to `ros::console::setLogLocationLevel(ros::console::LogLocation*, ros::console::levels::Level)'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:38: undefined reference to `ros::console::checkLogLocationEnabled(ros::console::LogLocation*)'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:38: undefined reference to `ros::console::print(ros::console::FilterBase*, void*, ros::console::levels::Level, char const*, int, char const*, char const*, ...)'
+/bin/ld: ./Stopper.o: in function `Stopper::startMoving()':
+/home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:45: undefined reference to `ros::Rate::Rate(double)'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:46: undefined reference to `ros::console::g_initialized'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:46: undefined reference to `ros::console::initialize()'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:46: undefined reference to `ros::console::initializeLogLocation(ros::console::LogLocation*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::console::levels::Level)'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:46: undefined reference to `ros::console::setLogLocationLevel(ros::console::LogLocation*, ros::console::levels::Level)'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:46: undefined reference to `ros::console::checkLogLocationEnabled(ros::console::LogLocation*)'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:46: undefined reference to `ros::console::print(ros::console::FilterBase*, void*, ros::console::levels::Level, char const*, int, char const*, char const*, ...)'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:48: undefined reference to `ros::ok()'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:50: undefined reference to `ros::spinOnce()'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.cpp:51: undefined reference to `ros::Rate::sleep()'
+/bin/ld: ./Stopper.o: in function `ros::Publisher ros::NodeHandle::advertise<geometry_msgs::Twist_<std::allocator<void> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, bool)':
+/opt/ros/noetic/include/ros/node_handle.h:254: undefined reference to `ros::NodeHandle::advertise(ros::AdvertiseOptions&)'
+/bin/ld: ./Stopper.o: in function `ros::Subscriber ros::NodeHandle::subscribe<sensor_msgs::LaserScan_<std::allocator<void> >, Stopper>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, void (Stopper::*)(boost::shared_ptr<sensor_msgs::LaserScan_<std::allocator<void> > const> const&), Stopper*, ros::TransportHints const&)':
+/opt/ros/noetic/include/ros/node_handle.h:472: undefined reference to `ros::NodeHandle::subscribe(ros::SubscribeOptions&)'
+/bin/ld: ./Stopper.o: in function `void ros::Publisher::publish<geometry_msgs::Twist_<std::allocator<void> > >(geometry_msgs::Twist_<std::allocator<void> > const&) const':
+/opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::g_initialized'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::initialize()'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::initializeLogLocation(ros::console::LogLocation*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::setLogLocationLevel(ros::console::LogLocation*, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::checkLogLocationEnabled(ros::console::LogLocation*)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::print(ros::console::FilterBase*, void*, ros::console::levels::Level, char const*, int, char const*, char const*, ...)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::g_initialized'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::initialize()'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::initializeLogLocation(ros::console::LogLocation*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::setLogLocationLevel(ros::console::LogLocation*, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::checkLogLocationEnabled(ros::console::LogLocation*)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::print(ros::console::FilterBase*, void*, ros::console::levels::Level, char const*, int, char const*, char const*, ...)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::g_initialized'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::initialize()'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::initializeLogLocation(ros::console::LogLocation*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::setLogLocationLevel(ros::console::LogLocation*, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::checkLogLocationEnabled(ros::console::LogLocation*)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:107: undefined reference to `ros::console::print(ros::console::FilterBase*, void*, ros::console::levels::Level, char const*, int, char const*, char const*, ...)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:111: undefined reference to `ros::Publisher::Impl::isValid() const'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::g_initialized'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::initialize()'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::initializeLogLocation(ros::console::LogLocation*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::setLogLocationLevel(ros::console::LogLocation*, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::checkLogLocationEnabled(ros::console::LogLocation*)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::print(ros::console::FilterBase*, void*, ros::console::levels::Level, char const*, int, char const*, char const*, ...)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::g_initialized'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::initialize()'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::initializeLogLocation(ros::console::LogLocation*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::setLogLocationLevel(ros::console::LogLocation*, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::checkLogLocationEnabled(ros::console::LogLocation*)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::print(ros::console::FilterBase*, void*, ros::console::levels::Level, char const*, int, char const*, char const*, ...)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::g_initialized'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::initialize()'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::initializeLogLocation(ros::console::LogLocation*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::setLogLocationLevel(ros::console::LogLocation*, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::checkLogLocationEnabled(ros::console::LogLocation*)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:113: undefined reference to `ros::console::print(ros::console::FilterBase*, void*, ros::console::levels::Level, char const*, int, char const*, char const*, ...)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:119: undefined reference to `ros::console::g_initialized'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:119: undefined reference to `ros::console::initialize()'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:119: undefined reference to `ros::console::initializeLogLocation(ros::console::LogLocation*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:119: undefined reference to `ros::console::setLogLocationLevel(ros::console::LogLocation*, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:119: undefined reference to `ros::console::checkLogLocationEnabled(ros::console::LogLocation*)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:119: undefined reference to `ros::console::print(ros::console::FilterBase*, void*, ros::console::levels::Level, char const*, int, char const*, char const*, ...)'
+/bin/ld: /opt/ros/noetic/include/ros/publisher.h:126: undefined reference to `ros::Publisher::publish(boost::function<ros::SerializedMessage ()> const&, ros::SerializedMessage&) const'
+/bin/ld: ./Stopper.o: in function `ros::serialization::Stream::advance(unsigned int)':
+/opt/ros/noetic/include/ros/serialization.h:681: undefined reference to `ros::serialization::throwStreamOverrun()'
+/bin/ld: /opt/ros/noetic/include/ros/serialization.h:681: undefined reference to `ros::serialization::throwStreamOverrun()'
+/bin/ld: ./Stopper.o: in function `ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::LaserScan_<std::allocator<void> > const> const&, void>::deserialize(ros::SubscriptionCallbackHelperDeserializeParams const&)':
+/opt/ros/noetic/include/ros/subscription_callback_helper.h:126: undefined reference to `ros::console::g_initialized'
+/bin/ld: /opt/ros/noetic/include/ros/subscription_callback_helper.h:126: undefined reference to `ros::console::initialize()'
+/bin/ld: /opt/ros/noetic/include/ros/subscription_callback_helper.h:126: undefined reference to `ros::console::initializeLogLocation(ros::console::LogLocation*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/subscription_callback_helper.h:126: undefined reference to `ros::console::setLogLocationLevel(ros::console::LogLocation*, ros::console::levels::Level)'
+/bin/ld: /opt/ros/noetic/include/ros/subscription_callback_helper.h:126: undefined reference to `ros::console::checkLogLocationEnabled(ros::console::LogLocation*)'
+/bin/ld: /opt/ros/noetic/include/ros/subscription_callback_helper.h:126: undefined reference to `ros::console::print(ros::console::FilterBase*, void*, ros::console::levels::Level, char const*, int, char const*, char const*, ...)'
+/bin/ld: ./Stopper.o: in function `ros::serialization::Stream::advance(unsigned int)':
+/opt/ros/noetic/include/ros/serialization.h:681: undefined reference to `ros::serialization::throwStreamOverrun()'
+/bin/ld: /opt/ros/noetic/include/ros/serialization.h:681: undefined reference to `ros::serialization::throwStreamOverrun()'
+/bin/ld: /opt/ros/noetic/include/ros/serialization.h:681: undefined reference to `ros::serialization::throwStreamOverrun()'
+/bin/ld: /opt/ros/noetic/include/ros/serialization.h:681: undefined reference to `ros::serialization::throwStreamOverrun()'
+/bin/ld: ./run_stopper.o: in function `main':
+/home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../run_stopper.cpp:19: undefined reference to `ros::init(int&, char**, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int)'
+/bin/ld: ./run_stopper.o: in function `Stopper::~Stopper()':
+/home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.h:13: undefined reference to `ros::Subscriber::~Subscriber()'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.h:13: undefined reference to `ros::Publisher::~Publisher()'
+/bin/ld: /home/sskulka/catkin_ws/src/wander_bot/src/wander_bot_cpp/Debug/../Stopper.h:13: undefined reference to `ros::NodeHandle::~NodeHandle()'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:60: wander_bot_cpp] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.

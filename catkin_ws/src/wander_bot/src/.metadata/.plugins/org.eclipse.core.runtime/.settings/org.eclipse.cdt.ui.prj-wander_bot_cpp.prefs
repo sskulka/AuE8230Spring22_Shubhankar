@@ -1,0 +1,3 @@
+buildConsole/keepLog=true
+buildConsole/logLocation=/home/sskulka/catkin_ws/src/wander_bot/src/.metadata/.plugins/org.eclipse.cdt.ui/wander_bot_cpp.build.log
+eclipse.preferences.version=1
